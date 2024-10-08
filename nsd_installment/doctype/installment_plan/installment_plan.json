@@ -1,0 +1,52 @@
+{
+    "doctype": "DocType",
+    "name": "Installment Plan",
+    "module": "NSD Installment",
+    "autoname": "field:sales_order",
+    "fields": [
+        {
+            "fieldname": "sales_order",
+            "label": "Sales Order",
+            "fieldtype": "Link",
+            "options": "Sales Order"
+        },
+        {
+            "fieldname": "total_amount",
+            "label": "Total Amount",
+            "fieldtype": "Currency"
+        },
+        {
+            "fieldname": "advance_payment",
+            "label": "Advance Payment",
+            "fieldtype": "Currency"
+        },
+        {
+            "fieldname": "installment_months",
+            "label": "Installment Months",
+            "fieldtype": "Int"
+        },
+        {
+            "fieldname": "monthly_installment",
+            "label": "Monthly Installment",
+            "fieldtype": "Currency",
+            "read_only": 1
+        },
+        {
+            "fieldname": "payment_schedule",
+            "label": "Payment Schedule",
+            "fieldtype": "Table",
+            "options": "Payment Schedule"
+        }
+    ],
+    "permissions": [
+        {
+            "role": "System Manager",
+            "read": 1,
+            "write": 1,
+            "create": 1,
+            "delete": 1
+        }
+    ],
+    "is_custom": 0,
+    "allow_copy": 0
+}
