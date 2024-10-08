@@ -1,8 +1,8 @@
-
 {
-    "doctype": "Installment Plan",
+    "doctype": "DocType",
     "name": "Installment Plan",
     "module": "NSD Installment",
+    "autoname": "field:sales_order",
     "fields": [
         {
             "fieldname": "sales_order",
@@ -37,5 +37,16 @@
             "fieldtype": "Table",
             "options": "Payment Schedule"
         }
-    ]
+    ],
+    "permissions": [
+        {
+            "role": "System Manager",
+            "read": 1,
+            "write": 1,
+            "create": 1,
+            "delete": 1
+        }
+    ],
+    "is_custom": 0,
+    "allow_copy": 0
 }
