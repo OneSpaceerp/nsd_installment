@@ -1,6 +1,8 @@
 
 {
     "doctype": "Payment Schedule",
+    "name": "Payment Schedule",
+    "module": "NSD Installment",
     "fields": [
         {
             "fieldname": "due_date",
