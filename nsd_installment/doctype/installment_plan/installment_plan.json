@@ -1,6 +1,8 @@
 
 {
     "doctype": "Installment Plan",
+    "name": "Installment Plan",
+    "module": "NSD Installment",
     "fields": [
         {
             "fieldname": "sales_order",
