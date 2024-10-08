@@ -7,6 +7,8 @@ app_icon = "octicon octicon-file-directory"
 app_color = "green"
 app_email = "your.email@example.com"
 app_license = "MIT"
+app_include_js = []  # No JavaScript to include
+app_include_css = []  # No CSS to include
 
 # Doctype event hooks
 doc_events = {
