@@ -1,3 +1,4 @@
+
 include MANIFEST.in
 include requirements.txt
 include *.json
@@ -7,3 +8,4 @@ include *.txt
 include nsd_installment_config.json
 recursive-include nsd_installment *.py
 recursive-include nsd_installment *.json
+recursive-include nsd_installment *.js
