@@ -1,6 +1,0 @@
-
-include README.md
-include nsd_installment_config.json
-recursive-include nsd_installment *.py
-recursive-include nsd_installment *.json
-    
