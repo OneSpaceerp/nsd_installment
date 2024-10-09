@@ -6,12 +6,16 @@
         {
             "fieldname": "due_date",
             "label": "Due Date",
-            "fieldtype": "Date"
+            "fieldtype": "Date",
+            "name": "due_date",
+            "description": "Due date for the installment"
         },
         {
             "fieldname": "installment_amount",
             "label": "Installment Amount",
-            "fieldtype": "Currency"
+            "fieldtype": "Currency",
+            "name": "installment_amount",
+            "description": "Amount for the installment"
         }
     ],
     "permissions": [
