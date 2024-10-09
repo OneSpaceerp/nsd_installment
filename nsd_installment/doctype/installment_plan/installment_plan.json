@@ -2,6 +2,18 @@
     "doctype": "DocType",
     "name": "Installment Plan",
     "module": "NSD Installment",
+    "autoname": "",
+    "docstatus": 0,
+    "document_type": "Document",
+    "editable_grid": 1,
+    "engine": "InnoDB",
+    "is_submittable": 0,
+    "modified": "",
+    "modified_by": "Administrator",
+    "owner": "Administrator",
+    "quick_entry": 1,
+    "sort_field": "modified",
+    "sort_order": "DESC",
     "fields": [
         {
             "fieldname": "sales_order",
