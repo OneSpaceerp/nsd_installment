@@ -79,7 +79,7 @@
             "name": "installment_amount"
         }
     ],
-    "name": "Payment Schedule",
+    "name": "Installment Schedule",
     "name_case": "",
     "permissions": [
         {
