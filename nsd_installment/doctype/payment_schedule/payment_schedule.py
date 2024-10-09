@@ -1,4 +1,3 @@
-
 import frappe
 from frappe.model.document import Document
 from frappe import _
@@ -13,10 +12,13 @@ class PaymentSchedule(Document):
             frappe.throw(_("Due date is required for each installment."))
 
     def on_payment_received(self, payment_amount):
-        # Update status when payment is received
+        # Handle different payment scenarios
         if payment_amount < self.installment_amount:
             frappe.throw(_("Payment amount is less than the installment amount."))
+        elif payment_amount == self.installment_amount:
+            self.status = "Paid"
+        elif payment_amount > self.installment_amount:
+            frappe.throw(_("Payment amount exceeds the installment amount."))
 
-        self.status = "Paid"
         self.db_update()
         frappe.msgprint(_("Installment marked as paid."))
