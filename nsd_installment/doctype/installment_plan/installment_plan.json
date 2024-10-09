@@ -3,7 +3,6 @@
  "allow_import": 0, 
  "allow_rename": 0,
  "doctype": "DocType",
- "name": "Installment Plan",
  "module": "NSD Installment",
  "autoname": "",
  "docstatus": 0,
