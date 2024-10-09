@@ -77,6 +77,8 @@
    "description": "Amount for the installment"
   }
 ],
+"name": "Payment Schedule",
+"name_case": "",
 "permissions": [
  {
   "role": "System Manager",
