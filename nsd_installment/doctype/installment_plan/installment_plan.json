@@ -48,6 +48,8 @@
    "description": "Number of months for the installment plan"
   }
 ],
+"name": "Installment Plan",
+"name_case": "",
 "permissions": [
   {
    "role": "System Manager",
