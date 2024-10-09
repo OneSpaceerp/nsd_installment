@@ -1,11 +1,18 @@
-
 include MANIFEST.in
 include requirements.txt
 include *.json
 include *.md
 include *.py
 include *.txt
-include nsd_installment_config.json
-recursive-include nsd_installment *.py
-recursive-include nsd_installment *.json
+recursive-include nsd_installment *.css
+recursive-include nsd_installment *.csv
+recursive-include nsd_installment *.html
+recursive-include nsd_installment *.ico
 recursive-include nsd_installment *.js
+recursive-include nsd_installment *.json
+recursive-include nsd_installment *.md
+recursive-include nsd_installment *.png
+recursive-include nsd_installment *.py
+recursive-include nsd_installment *.svg
+recursive-include nsd_installment *.txt
+recursive-exclude nsd_installment *.pyc
