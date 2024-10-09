@@ -1,0 +1,9 @@
+
+{
+  "js": [
+    "public/js/nsd_installment.js"
+  ],
+  "css": [
+    "public/css/nsd_installment.css"
+  ]
+}
