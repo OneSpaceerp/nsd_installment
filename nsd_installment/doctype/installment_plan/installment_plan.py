@@ -1,4 +1,3 @@
-
 import frappe
 from frappe.model.document import Document
 from frappe import _
@@ -11,7 +10,7 @@ class InstallmentPlan(Document):
         
         if self.advance_payment < 0:
             frappe.throw(_("Advance payment cannot be negative."))
-        
+
         # Ensure total amount is calculated before proceeding
         self.calculate_total()
 
@@ -37,19 +36,20 @@ class InstallmentPlan(Document):
 
     def on_submit(self):
         # Trigger invoice creation when the installment plan is submitted
-        self.create_invoice_for_installment()
+        self.create_invoices_for_all_installments()
 
-    def create_invoice_for_installment(self):
-        # Create a sales invoice for the first installment (to be extended for more)
-        invoice = frappe.get_doc({
-            'doctype': 'Sales Invoice',
-            'customer': self.customer,
-            'installment_plan': self.name,
-            'posting_date': frappe.utils.today(),
-            'due_date': self.payment_schedule[0].due_date,
-            'items': [{'item_name': item.item_name, 'qty': item.qty, 'rate': item.rate} for item in self.sales_order_items],
-            'total': self.monthly_installment
-        })
-        invoice.insert()
-        invoice.submit()
-        frappe.msgprint(_("Sales Invoice created for the first installment."))
+    def create_invoices_for_all_installments(self):
+        # Create a sales invoice for each installment in the payment schedule
+        for schedule in self.payment_schedule:
+            invoice = frappe.get_doc({
+                'doctype': 'Sales Invoice',
+                'customer': self.customer,
+                'installment_plan': self.name,
+                'posting_date': frappe.utils.today(),
+                'due_date': schedule.due_date,
+                'items': [{'item_name': item.item_name, 'qty': item.qty, 'rate': item.rate} for item in self.sales_order_items],
+                'total': schedule.installment_amount
+            })
+            invoice.insert()
+            invoice.submit()
+            frappe.msgprint(_("Sales Invoice created for installment due on {0}.").format(schedule.due_date))
