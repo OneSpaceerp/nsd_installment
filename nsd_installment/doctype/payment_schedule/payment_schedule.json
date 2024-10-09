@@ -1,41 +1,89 @@
 {
-    "doctype": "DocType",
-    "name": "Payment Schedule",
-    "module": "NSD Installment",
-    "autoname": "",
-    "docstatus": 0,
-    "document_type": "Document",
-    "editable_grid": 1,
-    "engine": "InnoDB",
-    "is_submittable": 0,
-    "modified": "",
-    "modified_by": "Administrator",
-    "owner": "Administrator",
-    "quick_entry": 1,
-    "sort_field": "modified",
-    "sort_order": "DESC",
-    "fields": [
-        {
-            "fieldname": "due_date",
-            "label": "Due Date",
-            "fieldtype": "Date",
-            "name": "due_date",
-            "description": "Due date for the installment"
-        },
-        {
-            "fieldname": "installment_amount",
-            "label": "Installment Amount",
-            "fieldtype": "Currency",
-            "name": "installment_amount",
-            "description": "Amount for the installment"
-        }
-    ],
-    "permissions": [
-        {
-            "role": "System Manager",
-            "read": 1,
-            "write": 1,
-            "create": 1
-        }
-    ]
+ "allow_copy": 0, 
+ "allow_import": 0, 
+ "allow_rename": 0,
+ "doctype": "DocType",
+ "name": "Payment Schedule",
+ "module": "NSD Installment",
+ "autoname": "",
+ "creation": "2024-09-10 07:05:42.556919",
+ "docstatus": 0,
+ "document_type": "Document",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "is_submittable": 0,
+ "modified": "",
+ "modified_by": "Administrator",
+ "owner": "Administrator",
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "fields": [
+  {
+   "allow_on_submit": 0, 
+   "bold": 0, 
+   "collapsible": 0, 
+   "columns": 0,
+   "fieldname": "due_date",
+   "fieldtype": "Date",
+   "hidden": 0,
+   "ignore_user_permissions": 0, 
+   "ignore_xss_filter": 0, 
+   "in_filter": 0, 
+   "in_list_view": 1, 
+   "in_standard_filter": 0,
+   "label": "Due Date",
+   "length": 0, 
+   "no_copy": 0, 
+   "permlevel": 0, 
+   "precision": "", 
+   "print_hide": 0, 
+   "print_hide_if_no_value": 0, 
+   "read_only": 0, 
+   "remember_last_selected_value": 0, 
+   "report_hide": 0, 
+   "reqd": 1, 
+   "search_index": 0, 
+   "set_only_once": 0, 
+   "unique": 0,
+   "description": "Due date for the installment"
+  },
+  {
+   "allow_on_submit": 0, 
+   "bold": 0, 
+   "collapsible": 0, 
+   "columns": 0,
+   "fieldname": "installment_amount",
+   "fieldtype": "Currency",
+   "hidden": 0,
+   "ignore_user_permissions": 0, 
+   "ignore_xss_filter": 0, 
+   "in_filter": 0, 
+   "in_list_view": 1, 
+   "in_standard_filter": 0,
+   "label": "Installment Amount",
+   "length": 0, 
+   "no_copy": 0, 
+   "permlevel": 0, 
+   "precision": "", 
+   "print_hide": 0, 
+   "print_hide_if_no_value": 0, 
+   "read_only": 0, 
+   "remember_last_selected_value": 0, 
+   "report_hide": 0, 
+   "reqd": 1, 
+   "search_index": 0, 
+   "set_only_once": 0, 
+   "unique": 0,
+   "description": "Amount for the installment"
+  }
+],
+"permissions": [
+ {
+  "role": "System Manager",
+  "read": 1,
+  "write": 1,
+  "create": 1
+ }
+]
 }
