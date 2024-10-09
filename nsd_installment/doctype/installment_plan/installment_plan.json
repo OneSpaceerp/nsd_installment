@@ -7,17 +7,23 @@
             "fieldname": "sales_order",
             "label": "Sales Order",
             "fieldtype": "Link",
-            "options": "Sales Order"
+            "options": "Sales Order",
+            "name": "sales_order",
+            "description": "Link to the Sales Order"
         },
         {
             "fieldname": "total_amount",
             "label": "Total Amount",
-            "fieldtype": "Currency"
+            "fieldtype": "Currency",
+            "name": "total_amount",
+            "description": "The total amount for the installment plan"
         },
         {
             "fieldname": "installment_months",
             "label": "Installment Months",
-            "fieldtype": "Int"
+            "fieldtype": "Int",
+            "name": "installment_months",
+            "description": "Number of months for the installment plan"
         }
     ],
     "permissions": [
