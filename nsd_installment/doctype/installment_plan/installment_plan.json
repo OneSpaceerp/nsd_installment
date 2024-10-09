@@ -1,0 +1,80 @@
+{
+    "allow_copy": 0,
+    "allow_import": 0,
+    "allow_rename": 0,
+    "doctype": "Installment Plan",
+    "module": "NSD Installment",
+    "autoname": "",
+    "creation": "2024-09-10 07:05:42.556919",
+    "docstatus": 0,
+    "document_type": "Document",
+    "editable_grid": 1,
+    "engine": "InnoDB",
+    "is_submittable": 1,
+    "modified": "",
+    "modified_by": "Administrator",
+    "owner": "Administrator",
+    "quick_entry": 1,
+    "sort_field": "modified",
+    "sort_order": "DESC",
+    "fields": [
+        {
+            "allow_on_submit": 0,
+            "bold": 0,
+            "collapsible": 0,
+            "columns": 0,
+            "fieldname": "sales_order",
+            "fieldtype": "Link",
+            "hidden": 0,
+            "ignore_user_permissions": 0,
+            "ignore_xss_filter": 0,
+            "in_filter": 0,
+            "in_list_view": 1,
+            "in_standard_filter": 0,
+            "label": "Sales Order",
+            "options": "Sales Order",
+            "description": "Link to the Sales Order",
+            "name": "sales_order"
+        },
+        {
+            "fieldname": "total_amount",
+            "label": "Total Amount",
+            "fieldtype": "Currency",
+            "description": "The total amount for the installment plan",
+            "name": "total_amount"
+        },
+        {
+            "fieldname": "installment_months",
+            "label": "Installment Months",
+            "fieldtype": "Int",
+            "description": "Number of months for the installment plan",
+            "name": "installment_months"
+        },
+        {
+            "fieldname": "advance_payment",
+            "label": "Advance Payment",
+            "fieldtype": "Currency",
+            "description": "The advance payment made by the customer",
+            "reqd": 1,
+            "name": "advance_payment"
+        },
+        {
+            "fieldname": "monthly_installment",
+            "label": "Monthly Installment",
+            "fieldtype": "Currency",
+            "description": "Amount to be paid monthly as per the installment plan",
+            "reqd": 0,
+            "name": "monthly_installment"
+        }
+    ],
+    "name": "Installment Plan",
+    "name_case": "",
+    "permissions": [
+        {
+            "role": "System Manager",
+            "read": 1,
+            "write": 1,
+            "create": 1
+        }
+    ]
+}
