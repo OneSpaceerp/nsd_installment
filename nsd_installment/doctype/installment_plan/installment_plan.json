@@ -33,33 +33,38 @@
             "in_standard_filter": 0,
             "label": "Sales Order",
             "options": "Sales Order",
-            "description": "Link to the Sales Order"
+            "description": "Link to the Sales Order",
+            "name": "sales_order"
         },
         {
             "fieldname": "total_amount",
             "label": "Total Amount",
             "fieldtype": "Currency",
-            "description": "The total amount for the installment plan"
+            "description": "The total amount for the installment plan",
+            "name": "total_amount"
         },
         {
             "fieldname": "installment_months",
             "label": "Installment Months",
             "fieldtype": "Int",
-            "description": "Number of months for the installment plan"
+            "description": "Number of months for the installment plan",
+            "name": "installment_months"
         },
         {
             "fieldname": "advance_payment",
             "label": "Advance Payment",
             "fieldtype": "Currency",
             "description": "The advance payment made by the customer",
-            "reqd": 1
+            "reqd": 1,
+            "name": "advance_payment"
         },
         {
             "fieldname": "monthly_installment",
             "label": "Monthly Installment",
             "fieldtype": "Currency",
             "description": "Amount to be paid monthly as per the installment plan",
-            "reqd": 0
+            "reqd": 0,
+            "name": "monthly_installment"
         }
     ],
     "name": "Installment Plan",
