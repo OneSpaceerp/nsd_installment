@@ -2,7 +2,7 @@
     "allow_copy": 0,
     "allow_import": 0,
     "allow_rename": 0,
-    "doctype": "DocType",
+    "doctype": "Installment Plan",
     "module": "NSD Installment",
     "autoname": "",
     "creation": "2024-09-10 07:05:42.556919",
